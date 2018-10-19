@@ -1,0 +1,32 @@
+    <br><br><br><br>
+
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      body { font: 13px Helvetica, Arial; }
+      form { background: #000; padding: 3px; /*position: fixed; bottom: 0; */width: 100%; }
+      form input { border: 0; padding: 10px; width: 90%; /*margin-right: .5%;*/ }
+      form button { width: 9%; background: rgb(130, 224, 255); border: none; padding: 10px; }
+      #messages { list-style-type: none; margin: 0; padding: 0; }
+      #messages li { padding: 5px 10px; }
+      #messages li:nth-child(odd) { background: #eee; },
+   /*   #textf {width:50%;height:50%;}*/
+
+    </style>
+  <div ng-controller="ChatController as chat">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    <div id="textf" ng-repeat="key in data">
+      <div class="col-md-12" style="background: #D2E9FF;">   
+          <ul id="chat" ng-model="messageLog"><b>{{ key.username }}</b>: &nbsp;{{ key.message1 }}</ul>
+      </div><br><br>
+    </div>
+  <br><br>
+  <form action="" id="send-message">
+      <input id="message" autocomplete="off" ng-model="message"/>
+      <button ng-click="sendMessage(message)"/>Submit</button>
+  </form> 
+  </div>

@@ -1,0 +1,88 @@
+<style>
+#map {
+    height:420px;
+    width:100%;
+}
+.infoWindowContent {
+    font-size:  14px !important;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+}
+h2 {
+    margin-bottom:0;
+    margin-top: 0;
+}
+</style>
+<br><br><br><br><br><br>
+	<!--<div class="container" ng-controller="ShowGymController">-->
+    <div class="container" ng-controller="MapCtrl"> 
+	<div class="container">
+		<div class="col-md-4" style="background: #D2E9FF;">
+			<br><br>
+		<b>Enter City</b> &nbsp;&nbsp;&nbsp;<input type="text" name="city" id="demo" ng-model="city" list="locname">
+			<datalist id="locname">
+				<option value="delhi">
+				<option value="mumbai">
+				<option value="noida">
+			</datalist>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" value="submit" name="gyms" ng-click="showAllGym()">
+		<br><br>
+		</div>		
+	</div>
+	<!-- <button onclick="getLocation()">Get Your location</button> -->
+		
+		<br><br><br>
+<div id="map"></div>
+    <div id="class" ng-repeat="marker in markers | orderBy : 'title'">
+         <!-- <a href="#" ng-click="openInfoWindow($event, marker)">{{marker.title}}</a> -->
+    </div>
+    <br><br><br><br><br><br>
+
+<div ng-repeat="key in data">
+	<div class="container">
+		<div class="col-md-6" style="background: #D2E9FF;">
+		<ul><h2><b>{{key.name | uppercase}}</b></h2>
+			<br>
+			<li><b>City</b> - {{key.city }}</li>
+			<br>
+			<li><b>Charges</b> - {{key.charges | number}}</li>
+			<br>
+			<li><b>Description</b> - {{key.description }}</li>
+		</ul>
+		<br>
+		<!--<my-directive id="{{key._id}}"></my-directive>-->
+		<!-- <a href="/bookTrial/{{key._id}}" my-directive id="{{key._id}}">Book a free trial</a>&nbsp;&nbsp;&nbsp;&nbsp; -->
+		<!-- <button my-directive id="{{key._id}}">Book a free trial</button>&nbsp;&nbsp;&nbsp;&nbsp;-->
+		<!-- <b>Rating - {{key.rating}}</b>&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="#">Reviews</a> -->
+		<!-- <b><my-directive id="{{key._id}}">Book a free trail</my-directive></b> -->
+		</div>
+		<div class="col-md-4" style="background: #bfbfbf;">
+				<h2>Book Free Trial</h2><br>		
+				Date:<input type="date" ng-model="date[$index]" name="date"><br><br>
+				Time:
+				<input type="text" name="time" id="time" ng-model="booktime[$index]" list="timings"><br>
+					<datalist id="timings">
+						<option value="06:00">
+						<option value="07:00">
+						<option value="08:00">
+						<option value="09:00">
+						<option value="10:00">
+						<option value="11:00">
+						<option value="16:00">
+						<option value="17:00">
+						<option value="18:00">
+						<option value="19:00">
+						<option value="20:00">
+					</datalist><br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="submit" ng-click="doBook(key._id, $index)" name="submit">
+			
+		</div>
+	</div>
+	<br><br>
+</div>
+</div>
+
+
+    

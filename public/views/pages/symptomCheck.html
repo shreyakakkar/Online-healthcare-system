@@ -1,0 +1,25 @@
+<br><br><br><br><br><br>
+<div class="container" ng-controller="CheckSymController as sym">
+<div class="col-md-4" style="background: #D2E9FF;">	
+	<br><br>
+	<b>Symptom:</b><input type="text" ng-model="sym1" name="sym1">&nbsp;&nbsp;&nbsp;&nbsp;
+
+	<input type="button" value="check" ng-click="checkSym()">
+	<br><br><br>
+</div>
+
+<br><br><br><br><br><br>
+<br><br><br><br><br><br>
+
+<div ng-repeat="key in data track by $index">
+	<div class="container">
+	<div class="col-md-8" style="background: #bfbfbf;">
+	<ul>
+		<li><h3><b>{{ key.heading }}</b></h3></li>
+		<p>{{ key.description }}</p>
+	</ul>
+	</div>
+	</div><br><br><br>
+</div>
+
+

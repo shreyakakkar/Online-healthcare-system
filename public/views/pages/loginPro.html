@@ -1,0 +1,50 @@
+<div class="container" ng-controller="MainController as main1">
+	<!-- <div id="header" style="width:100%;position:fixed; left:0px; top:0px; z-index:10000000;">
+		<div id="rr" style="float:left; width:15%;">
+			<h1><b>reMedi</b></h1>
+		</div> -->
+		<div id="header" style="width:100%;position:fixed; left:0px; height:80px; top:0px; z-index:100000;">
+			<div style="float:left; padding:10px; font-size:43px; width:15%;">reMedi
+			</div>
+		<div id="nav" style="float:left;width:35%;">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">For Doctors</a></li>
+				<li><a href="#">For Gyms</a></li>
+				<li><a href="#">For Yoga Centres</a></li>
+			</ul>
+		</div>
+		<div id="nav1" style="float:left;  width:50%;">
+		<ul>
+			<li ng-if="!main1.loggedIn"><a href="/loginPro">login</a></li>
+			<li ng-if="!main1.loggedIn" style="margin-left:20px;"><a href='/signupDoctor'>signup as Doctor</a></li>
+			<li ng-if="!main1.loggedIn" style="margin-left:30px;"><a href='/signupGym'>signup as Gym</a></li>
+			<li ng-if="!main1.loggedIn" style="margin-left:30px;"><a href='/signupYoga'>signup as Yoga</a></li>
+			<li ng-if="main1.loggedIn" style="margin-left:30px;"><a href='/viewPro'>View Schedule</a></li>
+			<!-- <li ng-if="main.loggedIn"><a href="#">hello {{ main.user.name }}</a></li> -->
+			<li ng-if="main1.loggedIn" style="margin-left:20px;"><a href="#" ng-click="main1.doLogout()">logout</a></li>
+		</ul>
+		</div>
+	</div>
+	<br><br><br>
+<img class="overlay" width="1200" height="750" src="app/views/images/prowalee.jpg" >
+	</img>
+<div class="clearfix"></div>		
+
+
+<div class="container-fluid" style="position:absolute; left:0px; top:400px; z-index:10000; width:100%; padding-top:50px; padding-bottom:50px;background:rgba(0,0,0,0.8);">
+	<div id="op1">
+		<center>
+			
+	<input type="text" placeholder="login type" name="types" id="demo" ng-model="main1.loginData.types" list="types">
+		<datalist id="types">
+			<option value="doctor">
+			<option value="gym">
+			<option value="yoga">
+		</datalist><br><br>
+	<input placeholder="username" type="text" ng-model="main1.loginData.username"><br><br>
+	<input placeholder="password" type="password" ng-model="main1.loginData.password"><br><br>
+	<button ng-click="main1.doLogin()">Login</button>
+</center>
+</div>
+</div>

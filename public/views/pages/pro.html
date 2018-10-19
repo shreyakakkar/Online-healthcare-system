@@ -1,0 +1,42 @@
+<!-- <div class="container" ng-controller="MainController as main1"> -->
+	<!-- <div id="header" style="width:100%;position:fixed; left:0px; top:0px; z-index:10000000;">
+		<div id="rr" style="float:left; width:15%;">
+			<h1><b>reMedi</b></h1>
+		</div> -->
+		<div id="header" style="width:100%;position:fixed; left:0px; height:80px; top:0px; z-index:100000;">
+			<div style="float:left; padding:10px; font-size:43px; width:15%;">reMedi
+			</div>
+		<div id="nav" style="float:left;width:35%;">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">For Doctors</a></li>
+				<li><a href="#">For Gyms</a></li>
+				<li><a href="#">For Yoga Centres</a></li>
+			</ul>
+		</div>
+		<div id="nav1" style="float:left;  width:50%;">
+		<ul>
+			<li ng-if="!main.loggedIn"><a href="/loginPro">login</a></li>
+			<li ng-if="!main.loggedIn" style="margin-left:20px;"><a href='/signupDoctor'>signup as Doctor</a></li>
+			<li ng-if="!main.loggedIn" style="margin-left:30px;"><a href='/signupGym'>signup as Gym</a></li>
+			<li ng-if="!main.loggedIn" style="margin-left:30px;"><a href='/signupYoga'>signup as Yoga</a></li>
+			<li ng-if="main.loggedIn" style="margin-left:30px;"><a href='/viewPro'>View Schedule</a></li>
+			<li ng-if="main.loggedIn" style="margin-left:20px;"><a href="#">hello {{ main1.user.name }}</a></li>
+			<li ng-if="main.loggedIn" style="margin-left:20px;"><a href="#" ng-click="main.doLogout()">logout</a></li>
+		</ul>
+		</div>
+	</div>
+
+
+<br><br><br>
+<img class="overlay" width="100%" height="750" src="app/views/images/fg3.jpg" >
+	</img>
+<div class="clearfix"></div>		
+ 
+<div class="container-fluid" style="position:absolute; left:0px; top:400px; z-index:10000; width:100%; padding-top:50px; padding-bottom:50px;background:rgba(0,0,0,0.8);">
+	<div id="op1">
+		<h2>while you keep them healthy <br> we keep you wealthy</h2>
+	</div>
+</div>
+<br><br>
+

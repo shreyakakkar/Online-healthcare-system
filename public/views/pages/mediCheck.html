@@ -1,0 +1,40 @@
+<br><br><br><br><br><br>
+<div class="container" ng-controller="MedSearchController as med">
+<div>	
+	Medicine Name:<input type="text" ng-model="name" name="name"><br><br>
+	
+	<input type="button" value="check" ng-click="searchMed()">
+</div>
+
+<br><br><br><br>
+<h2>Medicine details are:</h2>
+
+<div ng-repeat="key in data">
+	<div id="la" style="background: #D2E9FF; ">
+	<ul>
+		<li><b>Name : </b>{{key.name}}</li>
+		<li><b>Company: </b>{{key.company}}</li>
+		<li><b>Tablets per strip: </b>{{key.tabstrip}}</li>
+		<li><b>Price per tablet: </b>{{key.pricetab}}</li>
+		<li><b>Price per Strip: </b>{{key.pricestrip}}</li>
+		<li><b>Usage: </b>{{key.usage}}</li>
+
+	</ul>
+</div>
+</div>
+<br><br>
+<h2>Substitutes</h2>
+<div ng-repeat="key in subs">
+	<div id="lala" style="background: #bfbfbf;">
+	<ul>
+	<li><b>Name : </b>{{key.name}}</li>
+		<li><b>Company: </b>{{key.company}}</li>
+		<li><b>Tablets per strip: </b>{{key.tabstrip}}</li>
+		<li><b>Price per tablet: </b>{{key.pricetab}}</li>
+		<li><b>Price per Strip: </b>{{key.pricestrip}}</li>
+		<li><b>Usage: </b>{{key.usage}}</li>
+
+	</ul>
+</div>
+</div>
+

@@ -1,0 +1,92 @@
+<!-- <div class="container" ng-controller="MainController as main1">
+	<div id="header" style="width:100%;position:fixed; left:0px; top:0px; z-index:10000000;">
+		<div id="rr" style="float:left; width:15%;">
+			<h1><b>reMedi</b></h1>
+		</div> 
+		<div id="header" style="width:100%;position:fixed; left:0px; height:80px; top:0px; z-index:100000;">
+			<div style="float:left; padding:10px; font-size:43px; width:15%;">reMedi
+			</div>
+		<div id="nav" style="float:left;width:35%;">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">For Doctors</a></li>
+				<li><a href="#">For Gyms</a></li>
+				<li><a href="#">For Yoga Centres</a></li>
+			</ul>
+		</div>
+		<div id="nav1" style="float:left;  width:50%;">
+		<ul>
+			<li ng-if="!main1.loggedIn"><a href="/loginPro">login</a></li>
+			<li ng-if="!main1.loggedIn" style="margin-left:20px;"><a href='/signupDoctor'>signup as Doctor</a></li>
+			<li ng-if="!main1.loggedIn" style="margin-left:30px;"><a href='/signupGym'>signup as Gym</a></li>
+			<li ng-if="!main1.loggedIn" style="margin-left:30px;"><a href='/signupYoga'>signup as Yoga</a></li>
+			<li ng-if="main1.loggedIn" style="margin-left:30px;"><a href='/viewPro'>View Schedule</a></li>
+			<li ng-if="main1.loggedIn" style="margin-left:20px;"><a href="#">hello {{ main1.user.name }}</a></li>
+			<li ng-if="main1.loggedIn" style="margin-left:20px;"><a href="#" ng-click="main1.doLogout()">logout</a></li>
+		</ul>
+		</div>
+	</div>
+</div>
+ -->
+ <div id="header" style="width:100%;position:fixed; left:0px; height:80px; top:0px; z-index:100000;">
+			<div style="float:left; padding:10px; font-size:43px; width:15%;">reMedi
+			</div>
+		<div id="nav" style="float:left;width:35%;">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">For Doctors</a></li>
+				<li><a href="#">For Gyms</a></li>
+				<li><a href="#">For Yoga Centres</a></li>
+			</ul>
+		</div>
+		<div id="nav1" style="float:left;  width:50%;">
+		<ul>
+			<li ng-if="!main.loggedIn"><a href="/loginPro">login</a></li>
+			<li ng-if="!main.loggedIn" style="margin-left:20px;"><a href='/signupDoctor'>signup as Doctor</a></li>
+			<li ng-if="!main.loggedIn" style="margin-left:30px;"><a href='/signupGym'>signup as Gym</a></li>
+			<li ng-if="!main.loggedIn" style="margin-left:30px;"><a href='/signupYoga'>signup as Yoga</a></li>
+			<li ng-if="main.loggedIn" style="margin-left:30px;"><a href='/viewPro'>View Schedule</a></li>
+			<li ng-if="main.loggedIn" style="margin-left:20px;"><a href="#">hello {{ main1.user.name }}</a></li>
+			<li ng-if="main.loggedIn" style="margin-left:20px;"><a href="#" ng-click="main.doLogout()">logout</a></li>
+		</ul>
+		</div>
+	</div>
+
+
+<br><br><br><br><br>
+
+<h1><center>View Your appointments here!!</center></h1>
+<br><br>
+
+ <br><br><br>
+<div class="container" ng-controller="ViewProController as view">
+	<input type="button" ng-click="showBooking()" name="view" value="View">
+
+	<div ng-repeat="key in data">
+		<div id="la" style="background: #D2E9FF; ">
+		<div class="container">
+			<div class="col-md-8" style="background: #D2E9FF;">
+			<ul><h2><b>{{key.username}}</b></h2>
+				<li>date - {{key.date }}</li>
+				<li>time - {{key.time}}</li>
+				<li>email-id - {{key.email }}</li>
+			</ul>
+			<br>
+			<input type="button" ng-click="emailSend(key.email, $index)" value="Confirm Appointment">
+			<br><h4>Give another time slot</h4>
+			<input type="text" name="time" id="time" ng-model="booktime[$index]" list="timings"><br>
+					<datalist id="timings">
+						<option value="06:00">
+						<option value="07:00">
+						<option value="08:00">
+						<option value="09:00">
+						<option value="10:00">
+						<option value="11:00">
+						<option value="17:00">
+					</datalist>
+			<input type="button" ng-click="emailSend(key.email, $index)" value="Notify User">
+			</div>
+		</div>
+		</div>
+	</div>
+<div>

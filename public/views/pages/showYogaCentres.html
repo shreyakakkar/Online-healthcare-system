@@ -1,0 +1,29 @@
+<br><br><br><br><br><br>
+<div class="container" ng-controller="ShowYogaController as yoga">
+<div>
+	<input type="text" name="loc1" ng-model="loc1" list="locname1">
+		<datalist id="locname1">
+			<option value="delhi">
+			<option value="faridabad">
+			<option value="noida">
+		</datalist>
+	<input type="button" value="submit" name="yoga" ng-click="showAllyoga()">
+</div>		
+		
+	<button onclick="getLocation()">Get Your location</button>
+		<br><br><br><br><br><br>
+
+<div ng-repeat="key in data1 | orderBy:'charges'">
+		<ul><b>{{key.name | lowercase}}</b>
+			<li>City - {{key.city }}</li>
+			<li>Charges - {{key.charges | number}}</li>
+			<li>Description - {{key.description }}</li>
+		</ul>
+		<a href="/freeSession?id={{key._id}}">Register for Free trial</a>
+		<p>--------------------------</p>
+		<br>
+
+</div>
+		
+		
+	

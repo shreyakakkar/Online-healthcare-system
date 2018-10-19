@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html ng-app="MyApp">
+<head>
+	<base href='/'>
+<style>
+
+#header 
+{
+height:58px;
+background-color: #696969;
+border-bottom: 5px solid black;
+margin:0px;
+
+}
+
+#header #nav li
+{
+float:left;
+list-style:none;
+margin-top:10px;
+font-size: 14px;
+padding: 5px;
+}
+
+#header #nav li a
+{
+
+padding:20px;
+color:white;
+font-family: Gill Sans,Gill Sans MT,Calibri,sans-serif; 
+
+text-decoration:none;
+color:white;
+background-color:#696969;
+}
+#header #nav li a:hover
+{
+padding:25px;
+color:white;
+font-family: Gill Sans,Gill Sans MT,Calibri,sans-serif; 
+text-decoration:none;
+color:white;
+background-color:black;
+}
+#header #nav1 li
+{
+float:left;
+list-style:none;
+margin-top:10px;
+}
+#header #nav1 li a
+{
+
+padding:20px;
+color: white;
+
+font-family: Gill Sans,Gill Sans MT,Calibri,sans-serif; 
+
+text-decoration:none;
+border-style: solid;
+
+
+ border-color: black;
+font-size: 16px;
+background-color:black;
+}
+#footer #nav2 li
+{
+
+list-style:none;
+margin-top:80px;
+text-align: center;
+}
+
+#footer #nav2 li a
+{
+
+padding:30px;
+text-align: center;
+color:white;
+font-family: Gill Sans,Gill Sans MT,Calibri,sans-serif; 
+text-decoration:none;
+color:white;
+background-color:white;
+}
+#footer #nav2 li a:hover
+{
+
+
+}
+.morph {
+  -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+ 
+.morph:hover {-webkit-filter: grayscale(100%);
+  -webkit-transform: rotate(-10deg);
+     -moz-transform: rotate(-10deg);
+       -o-transform: rotate(-10deg);
+      -ms-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+}
+#footer #nav3 li
+{
+
+list-style:none;
+margin-top:80px;
+text-align: center;
+
+}
+
+#footer #nav3 li a
+{
+
+padding:30px;
+text-align: center;
+
+
+
+
+color:white;
+font-family: Gill Sans,Gill Sans MT,Calibri,sans-serif; 
+
+text-decoration:none;
+color:white;
+background-color:white;
+}
+#footer #nav4 li
+{
+
+list-style:none;
+margin-bottom:100px;
+text-align: center;
+
+
+}
+#ideone{
+	background-image: url(app/views/images/bloodis.jpg);
+	height: 1080px;
+	width:100%;
+	 background-repeat: no-repeat;
+}
+#shreya4{
+	background-image: url(app/views/images/Yoga21.jpg);
+	height: 1080px;
+	width:100%;
+	 background-repeat: no-repeat;
+}
+#shreya3{
+    background-image: url(app/views/images/gym2.jpg);
+    background-repeat: no-repeat;
+    height: 100%;
+    width:100%;
+    background-size:100% 100%; 
+}
+#shreya2
+{
+    background-image: url(app/views/images/s1.jpg);
+    height: 1046px;
+    background-repeat: no-repeat;
+    width:100%;
+}
+ #shreya{
+	background-image: url(app/views/images/fg.jpg);
+	height: 1080px;
+	 background-repeat: no-repeat;
+	 width:100%;
+}
+#footer #nav4 li a
+{
+
+padding:30px;
+margin-right:400px;
+color:white;
+font-family: Gill Sans,Gill Sans MT,Calibri,sans-serif; 
+
+text-decoration:none;
+color:white;
+background-color:white;
+}
+#polina 
+{ 
+  font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
+  font-weight:100; 
+  background: rgba(0,0,0,0.3);
+  color: white;
+  padding: 2rem;
+  width: 33%;
+  margin:50px;
+  float: right;
+  font-size: 1.2rem;
+position:relative;
+}
+
+#section 
+{
+    	 
+}
+#footer 
+{background-color:white;
+
+margin:0px;
+    
+}
+.overlay 
+{
+position:relative;  
+
+z-index:1000;
+
+}
+#st
+{
+text-align:center;
+margin-top:100px;
+padding-right:570px;
+font-family: Gill Sans,Gill Sans MT,Calibri,sans-serif; 
+  font-size: 160%;
+}
+.morph {
+  -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+ 
+.morph:hover {-webkit-filter: grayscale(100%);
+  -webkit-transform: rotate(-10deg);
+     -moz-transform: rotate(-10deg);
+       -o-transform: rotate(-10deg);
+      -ms-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+}
+#op1{
+font-family: font-family: Papyrus,fantasy; ; 
+text-size: 30000px;
+
+}
+#op1 h1{font-family: Impact,Haettenschweiler,Franklin Gothic Bold,Charcoal,Helvetica Inserat,Bitstream Vera Sans Bold,Arial Black,sans serif; 
+font-size: 250px;
+color: #606060;
+}
+.good-info li{
+padding-bottom:100px;
+padding:50px;
+float:left;
+text-decoration:none;
+text-align:center;
+}
+.good-grids h3{
+color:white;
+text-align:center;}
+.heading
+{
+font-size:28px;
+font-family: 'Roboto Slab', serif;
+color: #f65a5b;
+font-weight:bold;
+}
+</style>
+	<title>medicare</title>
+	<!--fonts-->
+	<script type="text/javascript" src="app/views/js/jquery.min.js"></script>
+	<script type="text/javascript" src="app/angular-1.2.28/angular.js"></script>
+	<script type="text/javascript" src="app/angular-1.2.28/angular-route.js"></script>
+	<script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+   	<script src="http://localhost:3000/socket.io/socket.io.js"></script>
+
+		<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+		
+	<!--//fonts-->
+			<link href="app/views/css/bootstrap.css" rel="stylesheet">
+			<link href="app/views/css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<!-- for-mobile-apps -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Favorites Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+		Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<!-- //for-mobile-apps -->	
+	<!-- js -->
+		
+	<!-- js -->
+	<!-- cart -->
+		<script src="app/views/js/simpleCart.min.js"> </script>
+	<!-- cart -->
+	<!-- start-smoth-scrolling -->
+		<script type="text/javascript" src="app/views/js/move-top.js"></script>
+		<script type="text/javascript" src="app/views/js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+	<!-- start-smoth-scrolling -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <!--<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true&libraries=places&language=en-US"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.3/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.3/angular-resource.min.js"></script>-->
+
+	<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places&sensor=false"></script>	
+
+
+	<!-- Services -->
+	<script type="text/javascript" src="app/services/authService.js"></script>
+	<script type="text/javascript" src="app/services/userService.js"></script>
+	<script type="text/javascript" src="app/services/gymService.js"></script>
+	<script type="text/javascript" src="app/services/yogaService.js"></script>
+	<script type="text/javascript" src="app/services/symptomService.js"></script>
+	<script type="text/javascript" src="app/services/bloodService.js"></script>
+	<script type="text/javascript" src="app/services/gymloginService.js"></script>
+	<script type="text/javascript" src="app/services/bookgymService.js"></script>
+	<script type="text/javascript" src="app/services/medService.js"></script>
+	<script type="text/javascript" src="app/services/viewproService.js"></script>
+	<!-- Controllers -->
+	<script type="text/javascript" src="app/controllers/mainCtrl.js"></script>
+	<script type="text/javascript" src="app/controllers/userCtrl.js"></script>
+	<script type="text/javascript" src="app/controllers/gymCtrl.js"></script>
+	<script type="text/javascript" src="app/controllers/yogaCtrl.js"></script>
+	<script type="text/javascript" src="app/controllers/symptomCtrl.js"></script>
+	<script type="text/javascript" src="app/controllers/bloodCtrl.js"></script>
+	<script type="text/javascript" src="app/controllers/mainsecCtrl.js"></script>
+	<script type="text/javascript" src="app/controllers/gymownCtrl.js"></script>
+	<script type="text/javascript" src="app/controllers/bookgymCtrl.js"></script>
+	<script type="text/javascript" src="app/controllers/medCtrl.js"></script>
+	<script type="text/javascript" src="app/controllers/yogaownCtrl.js"></script>
+	<script type="text/javascript" src="app/controllers/viewproCtrl.js"></script>
+		<script type="text/javascript" src="app/controllers/chatCtrl.js"></script> 
+	<!-- Directives -->
+	<script type="text/javascript" src="app/app.routes.js"></script>
+	<script type="text/javascript" src="app/app.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/danialfarid-angular-file-upload/10.1.2/ng-file-upload.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/danialfarid-angular-file-upload/10.1.2/ng-file-upload-shim.js"></script>
+
+	<script>
+	function scroll_doc()
+	{
+		$('body').animate({ scrollTop: ($("#find_doc").offset().top)-100},1200);
+	}
+	function scroll_gym()
+	{
+		$('body').animate({ scrollTop: ($("#find_gym").offset().top)-100},1200);
+	}
+	
+	function scroll_blood()
+	{
+		$('body').animate({ scrollTop: ($("#find_blood").offset().top)-100},1200);
+	}
+	function scroll_medi()
+	{
+		$('body').animate({ scrollTop: ($("#find_medi").offset().top)-100},1200);
+	}
+	function scroll_events()
+	{
+		$('body').animate({ scrollTop: ($("#find_events").offset().top)-100},1200);
+	}
+	function scroll_symp()
+	{
+		$('body').animate({ scrollTop: ($("#find_symp").offset().top)-100},1200);
+	}
+	</script>
+	<!--<script>
+			
+			var x = document.getElementById("demo");
+			
+			function getLocation() {
+				if (navigator.geolocation) {
+					navigator.geolocation.getCurrentPosition(showPosition);
+					} else { 
+					x.innerHTML = "Geolocation is not supported by this browser.";
+				}
+			}
+			
+			function showPosition(position) {
+				var h=name_city(position.coords.latitude,position.coords.longitude);
+				}
+			
+			function name_city(g1,g2)
+			{
+				var geocoder;
+				var h='';
+				geocoder = new google.maps.Geocoder();
+				var latlng = new google.maps.LatLng(g1, g2);
+				geocoder.geocode({
+					'latLng': latlng
+				},function(results, status) 
+				{
+					if (status == google.maps.GeocoderStatus.OK) 
+					{
+						if (results[0]) 
+						{
+							
+							var add = results[0].formatted_address;
+							document.getElementById('demo').value=add;
+						}
+						else 
+						{
+							alert("error");
+						}		
+					} 	
+				});
+				h=document.getElementById('demo').value;
+				return h;
+			}
+		</script>-->
+		<!--<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>-->
+</head>
+<body ng-controller="MainController as main">
+
+<div id="header" style="width:100%;position:fixed; left:0px; height:80px; top:0px; z-index:100000;">
+<div style="float:left; padding:10px; font-size:43px; width:12%;">reMedi
+</div>
+<div id="nav" style="float:left;width:63%;">
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="/chats">Live Discussion</a></li>
+<li onclick="scroll_doc();"><a href="">Find Doctors</a></li>
+<li onclick="scroll_medi();"><a href="">Medi</a></li>
+<li onclick="scroll_gym();"><a href="">Search Gym and Yoga</a></li>
+<li onclick="scroll_sym()"><a href="">Symptom</a></li>
+<li onclick="scroll_blood();"><a href="">Blood Bank</a></li>
+</ul>
+</div>
+<div id="nav1" style="float:left;  width:25%;">
+<ul>
+	<li ng-if="!main.loggedIn"><a href="/login">Login</a></li>
+	<li ng-if="!main.loggedIn" style="margin-left:20px;"><a href='/signup'>Signup</a></li>
+	<li ng-if="!main.loggedIn" style="margin-left:30px;"><a href='/pro'>PRO</a></li>
+	<li ng-if="main.loggedIn"><a href="#">hello {{main.user.name}}</a></li>
+	<li ng-if="main.loggedIn" style="margin-left:20px;"><a href="#" ng-click="main.doLogout()">logout</a></li>
+</ul>
+</div>
+</div>
+<!-- <div class="modal fade" id="myModal" role="dialog" style="z-index:1000000;">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h2 class="modal-title">Login</h2>
+        </div>
+        <div class="modal-body">
+      
+	    <div class="container" ng-controller="MainController as login">
+		<form method="post" ng-submit="login.doLogin()">
+			<b>Username:</b> <input type="text" name="username" ng-model="login.loginData.username"><br><br>
+			<b>Password:</b> <input type="password" name="password" ng-model="login.loginData.password"><br><br>
+			<button type="submit" class="btn btn-success">login</button>
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		</form>
+    	</div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+ -->
+
+<div ng-view> </div>
+
+
+<br><br><br>
+<div class="footer">
+	<div class="container">
+		<div class="footer-left">
+			<p>&copy;<a href="#">reMedi</a> 2015. All rights reserved.</p>
+		</div>
+		<div class="footer-right">
+			<ul>
+				<li><a href="#">T&C</a></li> &nbsp;&nbsp;&nbsp;
+				<li><a href="#">FAQ</a></li> &nbsp;&nbsp;&nbsp;
+				<li><a href="#">Costumer Support</a></li> 
+			</ul>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</div>
+
+<!-- footer -->
+<div class="footer">
+	<div class="container">
+		<div class="footer-left">
+			<p>&copy; 2015. Design by <a href="#"> reMedi</a></p>
+		</div>
+		<div class="footer-right">
+			<ul>
+				<li><a href="#" class="twitter"> </a></li>
+				<li><a href="#" class="facebook"> </a></li>
+				<li><a href="#" class="chrome"> </a></li>
+				<li><a href="#" class="pinterest"> </a></li>
+				<li><a href="#" class="linkedin"> </a></li>
+				<li><a href="#" class="dribbble"> </a></li>
+			</ul>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</div>
+
+<!-- //footer -->
+<!-- smooth scrolling -->
+	<!--<script type="text/javascript">
+		$(document).ready(function() {
+		/*
+			var defaults = {
+			containerID: 'toTop', // fading element id
+			containerHoverID: 'toTopHover', // fading element hover id
+			scrollSpeed: 1200,
+			easingType: 'linear' 
+			};
+		*/								
+		$().UItoTop({ easingType: 'easeOutQuart' });
+		});
+	</script>
+	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>-->
+<!-- //smooth scrolling -->
+
+</body>
+</html>

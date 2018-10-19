@@ -1,0 +1,52 @@
+<body>
+	<div id="ideone">
+		<br><br><br><br><br>
+<div class="container" ng-controller="BloodDonorController as blood">
+	<div>
+		<h2 align="center" style=" max-width: 500px;
+	padding: 20px 10px 10px 20px;
+	background: #C0E1FF;
+	border-bottom: 1px solid #B8DDFF;
+	margin-left:auto;
+	margin-right:auto;
+	"><b>Enter Details<b></h2>
+
+		<form style="margin-left:auto;
+	margin-right:auto;
+    max-width: 500px;
+    background: #D2E9FF;
+    padding: 20px 20px 20px 20px;
+    font: 12px Arial, Helvetica, sans-serif;
+    color: #666;">
+		<b style=" float: left;
+    margin-top: 10px;
+    color: #5E5E5E;">Name:</b><input type="text" ng-model="name"><br><br>
+		<b style=" float: left;
+    margin-top: 10px;
+    color: #5E5E5E;">Age:</b><input type="number" ng-model="age"><br><br>
+		<b style=" float: left;
+    margin-top: 10px;
+    color: #5E5E5E;">Blood-Group:</b><input type="text" ng-model="bloodGroup"><br><br>
+		<b style=" float: left;
+    margin-top: 10px;
+    color: #5E5E5E;">Mobile Number:</b><input type="text" ng-model="mobNo"><br><br>
+		<b style=" float: left;
+    margin-top: 10px;
+    color: #5E5E5E;">City:</b><input type="text" ng-model="city"><br><br>
+	<b style=" float: left;
+    margin-top: 10px;
+    color: #5E5E5E;">Last donated:</b><input type="date" ng-model="lastdonated"><br><br>
+    
+		<input type="button" ng-click="addDonor()" value="submit">
+	</form>
+	</div>
+
+	<br><br><br>
+		<b><p>{{ data.message }}</p></b>
+	</div>
+
+	<a href="/">Back to home</a>
+
+	<br>
+</div>
+</body>

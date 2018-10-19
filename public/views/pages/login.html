@@ -1,0 +1,38 @@
+<style>
+body{
+	background-image: url(../../../public/app/views/images/fg.jpg);
+}
+</style>
+<body >
+	<div id="shreya">
+	
+<br><br><br><br><br><br><br><br>
+
+	<h2 style=" max-width: 500px;
+	padding: 20px 10px 10px 20px;
+	color:#CF0;
+	border-bottom: 1px solid #B8DDFF;
+	margin-left:auto;
+	margin-right:auto;
+	"><b>Login<b></h2><br>
+
+	<div class="container" ng-controller="MainController as login">
+		<form style="margin-left:auto;
+			margin-right:auto;
+		    max-width: 500px;
+		    background: #D2E9FF;
+		    padding: 20px 20px 20px 20px;
+		    font: 12px Arial, Helvetica, sans-serif;
+		    color: #666;" method="post" ng-submit="login.doLogin()">
+			<b style=" float: left;
+    margin-top: 10px;
+    color: #5E5E5E;">Username : </b><input type="text" name="username" ng-model="login.loginData.username"><br><br>
+			<b style=" float: left;
+    margin-top: 10px;
+    color: #5E5E5E;">password : </b><input type="password" name="password" ng-model="login.loginData.password"><br><br>
+    	<!-- <input disabled type="text" ng-model="login.loginData.types" value="user"> -->
+			<button type="submit" class="btn btn-success">login</button>
+		</form>
+	</div>
+</div>
+</body>
