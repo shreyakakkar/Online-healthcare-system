@@ -1,0 +1,26 @@
+{
+  "name": "userstory",
+  "version": "1.0.0",
+  "description": "This is a user Story app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rohit",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.14.0",
+    "cheerio": "^0.19.0",
+    "cheerio-select": "0.0.3",
+    "express": "^4.13.3",
+    "jsonwebtoken": "^5.0.5",
+    "mongoose": "^4.1.9",
+    "mongooses": "^1.0.0",
+    "morgan": "^1.6.1",
+    "multer": "^1.1.0",
+    "request": "^2.64.0",
+    "sort-json": "^1.1.0",
+    "underscore": "^1.8.3"
+  }
+}
